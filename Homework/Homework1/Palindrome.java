@@ -5,8 +5,8 @@ public class Palindrome {
 	
 	public static boolean isPalindrome(String s) {
 		
-		s.toLowerCase();
-		s.replaceAll("[^a-zA-Z0-9]", "");
+		s = s.toLowerCase();
+		s = s.replaceAll("[^a-zA-Z0-9]", "");
 		
 		String reverse = "";
 		
