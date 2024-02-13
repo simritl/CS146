@@ -12,7 +12,7 @@ Growth: c1 + c2(n) + c3(n - 1 ) + c4(n - 1) + c5((n * n - 1)/2) + c6((n * n - 1)
 		   
 We can simplify this to: (1/2 * (c5 + c6 + c7))(n^2 - 1) + (c2 + c3 + c4 + c8)(n) + (c1 - c3 - c4 - c8).	
 
-This a quadratic expression in the form: an^2 + bn + c.
+This a quadratic expression in the form and the highest degree is 2: an^2 + bn + c.
 
 Where a = (1/2 * (c5 + c6 + c7)),   	      b = (c2 + c3 + c4 + c8),        and c = (c1 - c3 - c4 - c8).
 
