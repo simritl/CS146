@@ -7,12 +7,12 @@ public class Graph {
 	
 	public boolean canFinish(int numCourses, int[][] prerequisites) {
         
-		int[][] adjMatrix = new int[numCourses][numCourses];
+	int[][] adjMatrix = new int[numCourses][numCourses];
         int[] inDegree = new int[numCourses];
        
         for (int[] prerequisite : prerequisites) {
             
-        	int from = prerequisite[1];
+            int from = prerequisite[1];
             int to = prerequisite[0];
             
             if (adjMatrix[from][to] == 0) {
@@ -36,7 +36,7 @@ public class Graph {
        
         while (!queue.isEmpty()) {
             
-        	int course = queue.poll();
+            int course = queue.poll();
             count++;
             
             for (int i = 0; i < numCourses; i++) {
